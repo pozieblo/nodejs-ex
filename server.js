@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   // Write a message to the response body
   res.end('Something went wrong!');
+  console.log('Someone tried to call url: ' + req.url);
 });
 
 // Listen on defined port 
