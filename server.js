@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
       res.write('Hello World');
       // End the response
       res.end();
-    }, MY_TIMEOUT);
+    }, timeout);
     
   console.log('Someone tried to call url: ' + req.url);
 });
